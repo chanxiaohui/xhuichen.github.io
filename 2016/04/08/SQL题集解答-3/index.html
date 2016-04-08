@@ -1,0 +1,588 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>SQL题集解答-3 | CrazyPotato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="CrazyPotato">
+    
+
+    
+    <meta name="description" content="链接直达
+
+1.Change the query shown so that it displays Nobel prizes for 1950.
+
+12345SELECT yr,       subject,       winnerFROM nobelWHERE yr = 1960
+
+2.Show who won the 1962 prize for Literature.
+
+1234SELE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL题集解答-3">
+<meta property="og:url" content="http://yoursite.com/2016/04/08/SQL题集解答-3/index.html">
+<meta property="og:site_name" content="CrazyPotato">
+<meta property="og:description" content="链接直达
+
+1.Change the query shown so that it displays Nobel prizes for 1950.
+
+12345SELECT yr,       subject,       winnerFROM nobelWHERE yr = 1960
+
+2.Show who won the 1962 prize for Literature.
+
+1234SELE">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1844398-864fa1823b100a3b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-04-08T12:56:16.265Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SQL题集解答-3">
+<meta name="twitter:description" content="链接直达
+
+1.Change the query shown so that it displays Nobel prizes for 1950.
+
+12345SELECT yr,       subject,       winnerFROM nobelWHERE yr = 1960
+
+2.Show who won the 1962 prize for Literature.
+
+1234SELE">
+
+    
+    <link rel="alternative" href="/atom.xml" title="CrazyPotato" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="CrazyPotato" title="CrazyPotato"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="CrazyPotato">CrazyPotato</a></h1>
+				<h2 class="blog-motto">Fly a Kite</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页 | Home</a></li>
+					
+						<li><a href="/index">索引 | Index</a></li>
+					
+						<li><a href="/archives">归档 | Archives</a></li>
+					
+						<li><a href="/about">简介 | About</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="http://zhannei.baidu.com/cse/search" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value= 4915478247248512575 ><input type="text" name="q" size="30" placeholder="搜索"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/04/08/SQL题集解答-3/" title="SQL题集解答-3" itemprop="url">SQL题集解答-3</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="CrazyPotato" target="_blank" itemprop="author">CrazyPotato</a>
+		
+  <p class="article-time">
+    <time datetime="2016-04-08T12:56:25.119Z" itemprop="datePublished"> 发表于 2016-04-08</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			
+		
+		</div>
+		
+		<p><a href="http://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial" target="_blank" rel="external">链接直达</a><br><img src="http://upload-images.jianshu.io/upload_images/1844398-864fa1823b100a3b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>1.Change the query shown so that it displays Nobel prizes for 1950.</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> yr,</span><br><span class="line">       subject,</span><br><span class="line">       winner</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> yr = <span class="number">1960</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>2.Show who won the 1962 prize for Literature.</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> winner</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> yr = <span class="number">1960</span></span><br><span class="line">  <span class="keyword">AND</span> subject = <span class="string">'Physics'</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>3.Show the year and subject that won ‘Albert Einstein’ his prize.</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> yr,</span><br><span class="line">       subject</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> winner=<span class="string">'Albert Einstein'</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>4.Give the name of the ‘Peace’ winners since the year 2000, including 2000.</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> winner</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> yr&gt;=<span class="number">2000</span></span><br><span class="line">  <span class="keyword">AND</span> subject=<span class="string">'Peace'</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>5.Show all details (<strong>yr</strong>, <strong>subject</strong>, <strong>winner</strong>) of the Literature prize winners for 1980 to 1989 inclusive.</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> subject=<span class="string">'Literature'</span></span><br><span class="line">  <span class="keyword">AND</span> yr <span class="keyword">BETWEEN</span> <span class="number">1980</span> <span class="keyword">AND</span> <span class="number">1989</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>6.Show all details of the presidential winners:</p>
+<ul>
+<li>Theodore Roosevelt</li>
+<li>Woodrow Wilson</li>
+<li>Jimmy Carter</li>
+</ul>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> winner <span class="keyword">IN</span> (<span class="string">'Theodore Roosevelt'</span>,</span><br><span class="line">                 <span class="string">'Woodrow Wilson'</span>,</span><br><span class="line">                 <span class="string">'Jimmy Carter'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>7.Show the winners with first name John</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SELECT</span> winner</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> winner <span class="keyword">LIKE</span> <span class="string">'John%'</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>8.Show the Physics winners for 1980 together with the Chemistry winners for 1984.</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> yr,</span><br><span class="line">       subject,</span><br><span class="line">       winner</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> (subject=<span class="string">'Physics'</span></span><br><span class="line">       <span class="keyword">AND</span> yr=<span class="string">'1980'</span>)</span><br><span class="line">  <span class="keyword">OR</span> (subject=<span class="string">'Chemistry '</span></span><br><span class="line">      <span class="keyword">AND</span> yr=<span class="string">'1984'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>9.Show the winners for 1980 excluding the Chemistry and Medicine</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> yr,</span><br><span class="line">       subject,</span><br><span class="line">       winner</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> yr=<span class="number">1980</span></span><br><span class="line">  <span class="keyword">AND</span> subject <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">'Chemistry'</span>,</span><br><span class="line">                      <span class="string">'Medicine'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>10.Show who won a ‘Medicine’ prize in an early year (before 1910, not including 1910) together with winners of a ‘Literature’ prize in a later year (after 2004, including 2004)</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> yr,</span><br><span class="line">       subject,</span><br><span class="line">       winner</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> (yr&lt;<span class="number">1910</span></span><br><span class="line">       <span class="keyword">AND</span> subject=<span class="string">'Medicine'</span>)</span><br><span class="line">  <span class="keyword">OR</span> (yr&gt;=<span class="number">2004</span></span><br><span class="line">      <span class="keyword">AND</span> subject=<span class="string">'Literature'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>11.Find all details of the prize won by PETER GRÜNBERG</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> winner <span class="keyword">LIKE</span> <span class="string">'PETER GR%NBERG'</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>12.Find all details of the prize won by EUGENE O’NEILL</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="operator"><span class="keyword">select</span> *</span><br><span class="line"><span class="keyword">from</span> nobel <span class="keyword">where</span> winner <span class="keyword">like</span> <span class="string">'EUGENE O''NEILL'</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>13.Knights in order<br>List the winners, year and subject where the winner starts with<strong>Sir</strong>. Show the the most recent first, then by name order.</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SELECT</span> winner,</span><br><span class="line">       yr,</span><br><span class="line">       subject</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> winner <span class="keyword">LIKE</span> <span class="string">'Sir%'</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> yr <span class="keyword">DESC</span>,winner <span class="keyword">ASC</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>14.The expression <strong>subject IN (‘Chemistry’,’Physics’)</strong> can be used as a value - it will be <strong>0</strong> or <strong>1</strong>.<br>Show the 1984 winners and subject ordered by subject and winner name; but list Chemistry and Physics last.</p>
+</blockquote>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> winner,</span><br><span class="line">       subject</span><br><span class="line"><span class="keyword">FROM</span> nobel</span><br><span class="line"><span class="keyword">WHERE</span> yr=<span class="number">1984</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> subject <span class="keyword">IN</span> (<span class="string">'Physics'</span>,</span><br><span class="line">                     <span class="string">'Chemistry'</span>), subject,</span><br><span class="line">                                   winner</span><br></pre></td></tr></table></figure>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/SQL/">SQL</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/SQL/">SQL</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/04/08/SQL题集解答-3/" data-title="SQL题集解答-3 | CrazyPotato" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/04/08/SQL题集解答-2/" title="SQL题集解答-1">
+  <strong>上一篇：</strong><br/>
+  <span>
+  SQL题集解答-1</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/04/08/SQL题集解答-1/"  title="SQL题集解答-1">
+ <strong>下一篇：</strong><br/> 
+ <span>SQL题集解答-1
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/04/08/SQL题集解答-3/" data-title="SQL题集解答-3" data-url="http://yoursite.com/2016/04/08/SQL题集解答-3/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="xhuichen" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/SQL/" title="SQL">SQL<sup>3</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/SQL/" title="SQL">SQL<sup>3</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.pyimagesearch.com/" target="_blank" title="Pyimagesearch">Pyimagesearch</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.tuicool.com" target="_blank" title="推酷">推酷</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m CrazyPotato. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2045073051" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/xhuichen" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:793454285@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="CrazyPotato">CrazyPotato</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"CrazyPotato"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257545302'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1257545302' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
